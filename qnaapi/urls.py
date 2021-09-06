@@ -17,11 +17,9 @@ from django.contrib import admin
 from django.urls import path
 
 from django.conf.urls import url
-from django.conf import settings
 from qna import views
 
 urlpatterns = [
     url('^callback',views.callback),
-    url(r'^static/(?P<path>.*)$',django.views.static.serve,{'document_root':settings.STATIC_ROOT,}),
     path('admin/', admin.site.urls),
 ]
