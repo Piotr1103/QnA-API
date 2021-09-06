@@ -22,8 +22,6 @@ from qna import views
 
 urlpatterns = [
     url('^callback',views.callback),
-    url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {
-        'document_root': settings.STATIC_ROOT,
-    }),
+    url(r'^static/(?P<path>.*)$',views.static.serve,{'document_root':settings.STATIC_ROOT,}),
     path('admin/', admin.site.urls),patterns('',
 ]
