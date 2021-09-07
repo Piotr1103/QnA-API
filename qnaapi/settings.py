@@ -25,7 +25,7 @@ LINE_CHANNEL_ACCESS_TOKEN = 'ALivuT5rFUzTr2iBKxGHPEi9+QjqYau/bHV/CR2HE8RuU6zVYCk
 LINE_CHANNEL_SECRET = '87c48487ce47e3e7c9002ad4c17581df'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -124,4 +124,3 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [  #加入 static 路徑
     os.path.join(BASE_DIR, 'static'),
 ]
-STATIC_ROOT = (os.path.join(os.path.dirname(__file__), '..', 'static'))
