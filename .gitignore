@@ -2,4 +2,4 @@
 __pycache__
 staticfiles
 *.exe
-*.exe.old
+*.*.exe.old
