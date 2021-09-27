@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath qnaapi qnaapi.wsgi
+web: gunicorn --pythonpath qnaapihero qnaapi.wsgi
